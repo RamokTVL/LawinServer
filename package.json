@@ -1,15 +1,17 @@
 {
   "name": "lawinserverfinal",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "description": "A simple Node app built on koa and typescript, instantly up and running.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "crypto": "^1.0.1",
-    "express": "^4.17.1",
     "fs": "^0.0.1-security",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.1.1",
     "moment": "^2.29.1",
     "path": "^0.12.7"
   },
@@ -22,7 +24,14 @@
   "license": "GNU",
   "keywords": [
     "node",
-    "express",
-    "fortnite"
-  ]
+    "koa",
+    "fortnite",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.5",
+    "@types/koa-router": "^7.4.4",
+    "eslint": "^8.6.0"
+  }
 }
